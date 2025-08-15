@@ -39,7 +39,7 @@ function App() {
           className="text-center"
         >
           <div className="w-16 h-16 border-4 border-neon-blue border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <h2 className="text-2xl font-bold text-neon-blue">Consórcio Futurista</h2>
+          <h2 className="text-2xl font-bold text-neon-blue">Consórcio 4.0</h2>
           <p className="text-gray-400 mt-2">Carregando...</p>
         </motion.div>
       </div>
