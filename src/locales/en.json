@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "The Future of Consortia is Now",
+    "subtitle": "Transparency, automation, and total security powered by blockchain technology.",
+    "buttons": {
+      "primary": "Discover the Project",
+      "secondary": "Join the Waitlist"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Three simple steps to revolutionize your consortia",
+    "steps": [
+      {
+        "title": "Instant Registration",
+        "description": "Create your account and choose your consortium plan."
+      },
+      {
+        "title": "Blockchain in Action",
+        "description": "All transactions and draws recorded immutably."
+      },
+      {
+        "title": "Full Automation",
+        "description": "Payments, audits, and releases without intermediaries."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits",
+    "subtitle": "Why choose our platform",
+    "items": [
+      {
+        "title": "Absolute Security",
+        "description": "Smart contracts ensure all rules are automatically enforced."
+      },
+      {
+        "title": "Full Transparency",
+        "description": "All transactions are visible and auditable in real time."
+      },
+      {
+        "title": "Reduced Costs",
+        "description": "Eliminate intermediaries and significantly reduce operational costs."
+      }
+    ]
+  },
+  "technology": {
+    "title": "The Infrastructure Behind the Innovation",
+    "subtitle": "Cutting-edge technology for exceptional results",
+    "text": "Our system uses smart contracts and public blockchain to ensure all consortium rules are enforced without human intervention. Every share, draw, and payment is traceable and auditable in real time.",
+    "features": [
+      "Smart Contracts",
+      "Public Blockchain",
+      "Real-time Auditing",
+      "Advanced Cryptography"
+    ]
+  },
+  "cta": {
+    "text": "Join the consortium revolution. Be part of the future.",
+    "button": "Request a Demo"
+  },
+  "footer": {
+    "description": "Transforming the future of consortia with blockchain technology",
+    "links": {
+      "about": "About",
+      "technology": "Technology",
+      "contact": "Contact",
+      "privacy": "Privacy"
+    }
+  },
+  "language": {
+    "pt": "PT",
+    "en": "EN"
+  },
+  "form": {
+    "email": "Your email",
+    "submit": "Send",
+    "placeholder": "Enter your email to receive updates",
+    "success": "Email registered successfully!",
+    "error": "Error registering email. Please try again."
+  }
+} 

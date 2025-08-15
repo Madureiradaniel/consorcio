@@ -1,0 +1,7 @@
+
+services:
+    consorcio:
+        build: .
+        restart: always
+        ports:
+            - 4070:3000

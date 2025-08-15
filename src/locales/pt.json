@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "O Futuro dos Consórcios é Agora",
+    "subtitle": "Transparência, automação e segurança total com a tecnologia blockchain.",
+    "buttons": {
+      "primary": "Conheça o Projeto",
+      "secondary": "Entre na Lista de Espera"
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Três passos simples para revolucionar seus consórcios",
+    "steps": [
+      {
+        "title": "Cadastro Instantâneo",
+        "description": "Crie sua conta e escolha o plano de consórcio."
+      },
+      {
+        "title": "Blockchain na Prática",
+        "description": "Todas as transações e sorteios registrados de forma imutável."
+      },
+      {
+        "title": "Automação Total",
+        "description": "Pagamentos, auditorias e liberações sem intermediários."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefícios",
+    "subtitle": "Por que escolher nossa plataforma",
+    "items": [
+      {
+        "title": "Segurança Absoluta",
+        "description": "Smart contracts garantem que todas as regras sejam cumpridas automaticamente."
+      },
+      {
+        "title": "Transparência Total",
+        "description": "Todas as transações são visíveis e auditáveis em tempo real."
+      },
+      {
+        "title": "Custos Reduzidos",
+        "description": "Elimine intermediários e reduza custos operacionais significativamente."
+      }
+    ]
+  },
+  "technology": {
+    "title": "A Infraestrutura por Trás da Inovação",
+    "subtitle": "Tecnologia de ponta para resultados excepcionais",
+    "text": "Nosso sistema utiliza smart contracts e blockchain pública para garantir que todas as regras do consórcio sejam cumpridas sem intervenção humana. Cada cota, sorteio e pagamento é rastreável e auditável em tempo real.",
+    "features": [
+      "Smart Contracts",
+      "Blockchain Pública",
+      "Auditoria em Tempo Real",
+      "Criptografia Avançada"
+    ]
+  },
+  "cta": {
+    "text": "Junte-se à revolução dos consórcios. Faça parte do futuro.",
+    "button": "Solicitar Demonstração"
+  },
+  "footer": {
+    "description": "Transformando o futuro dos consórcios com tecnologia blockchain",
+    "links": {
+      "about": "Sobre",
+      "technology": "Tecnologia",
+      "contact": "Contato",
+      "privacy": "Privacidade"
+    }
+  },
+  "language": {
+    "pt": "PT",
+    "en": "EN"
+  },
+  "form": {
+    "email": "Seu e-mail",
+    "submit": "Enviar",
+    "placeholder": "Digite seu e-mail para receber novidades",
+    "success": "E-mail cadastrado com sucesso!",
+    "error": "Erro ao cadastrar e-mail. Tente novamente."
+  }
+} 
