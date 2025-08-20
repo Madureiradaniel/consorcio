@@ -28,9 +28,9 @@ const LiftLabPopup = () => {
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
         >
           <motion.div
-            initial={{ scale: 0.8, opacity: 0, y: 50 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.8, opacity: 0, y: 50 }}
+            initial={{ scale: 0.7, opacity: 0, y: 50 }}
+            animate={{ scale: 0.77, opacity: 1, y: 0 }}
+            exit={{ scale: 0.7, opacity: 0, y: 50 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className="relative max-w-4xl w-full glass-card neon-border p-10 text-center"
           >
