@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
@@ -178,20 +177,24 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Elemento decorativo flutuante */}
-      <motion.div
-        animate={{ y: [-10, 10, -10] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-neon-blue rounded-full flex justify-center">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1 h-3 bg-neon-blue rounded-full mt-2"
-          />
-        </div>
-      </motion.div>
+     {/* Elemento decorativo flutuante */}
+<motion.div
+  animate={{ y: [-10, 10, -10] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+  className="
+    relative 
+    md:absolute md:bottom-10 md:left-1/2 md:transform md:-translate-x-1/2
+  "
+>
+  <div className="w-6 h-10 border-2 border-neon-blue rounded-full flex justify-center">
+    <motion.div
+      animate={{ y: [0, 12, 0] }}
+      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      className="w-1 h-3 bg-neon-blue rounded-full mt-2"
+    />
+  </div>
+</motion.div>
+
     </section>
   );
 };
