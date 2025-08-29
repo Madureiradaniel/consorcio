@@ -2,11 +2,26 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Sparkles } from 'lucide-react';
 
+
 const Hero = () => {
   const { t } = useTranslation();
 
+  const handlePrimaryClick = () => {
+    // Exemplo: navegar para uma seção específica
+    const targetSection = document.getElementById('benefits');
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+   const handleSecondaryClick = () => {
+    // Criar uma Newsletter
+    console.log('Criando fromulário...');
+    
+  };
+  
   return (
-    <section className="relative min-h-screen flex items-center justify-center section-padding pt-32">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center section-padding pt-32">
       {/* Background com gradientes */}
       <div className="absolute inset-0 hero-gradient"></div>
       
@@ -87,7 +102,7 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="container-custom text-center relative z-10">
+      <div className="container-custom text-center relative z-10 p-8">
         {/* Badge superior */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -130,7 +145,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16"
         >
-          <motion.button
+          <motion.button 
+            onClick={handlePrimaryClick}
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             className="group flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-white font-semibold rounded-xl neon-glow hover:shadow-2xl transition-all duration-300"
