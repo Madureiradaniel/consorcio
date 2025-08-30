@@ -16,7 +16,10 @@ const Hero = () => {
 
    const handleSecondaryClick = () => {
     // Criar uma Newsletter
-    console.log('Criando fromulário...');
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({behavior: 'smooth'})
+    }
     
   };
   
@@ -156,6 +159,7 @@ const Hero = () => {
           </motion.button>
 
           <motion.button
+          onClick={handleSecondaryClick}
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             className="group flex items-center space-x-3 px-8 py-4 glass-card neon-border text-white font-semibold rounded-xl hover:neon-glow transition-all duration-300"

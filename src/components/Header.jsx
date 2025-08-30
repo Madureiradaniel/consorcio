@@ -37,7 +37,7 @@ const Header = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container-custom bg-dark-700 ">
+      <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div>
@@ -138,7 +138,7 @@ const Header = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden border-t border-white/10 z-50 px-4 relative"
+              className="md:hidden border-t border-white/10 z-50 px-4 relative bg-dark-700/90 neon-border rounded-lg"
             >
               <nav className="py-4 space-y-4">
                 <a
