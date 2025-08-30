@@ -17,7 +17,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const { scrollYProgress } = useScroll();
   
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '5%']);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '10%']);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
 
   useEffect(() => {
