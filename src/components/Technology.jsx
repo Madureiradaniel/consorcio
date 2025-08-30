@@ -112,13 +112,13 @@ const Technology = () => {
             </div>
 
             {/* Botão CTA */}
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-white font-semibold rounded-xl neon-glow hover:shadow-2xl transition-all duration-300"
             >
               Explorar Tecnologia
-            </motion.button>
+            </motion.button> */}
           </motion.div>
 
           {/* Coluna direita - Features */}

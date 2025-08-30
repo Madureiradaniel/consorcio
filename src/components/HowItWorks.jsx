@@ -139,13 +139,13 @@ const HowItWorks = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-white font-semibold rounded-xl neon-glow hover:shadow-2xl transition-all duration-300"
           >
             Começar Agora
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </div>
 
