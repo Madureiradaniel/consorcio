@@ -104,8 +104,7 @@ const CTA = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl text-gray-300 mb-12 leading-relaxed"
           >
-            Junte-se a milhares de pessoas que já estão revolucionando seus
-            consórcios com nossa tecnologia blockchain.
+            {t('cta.subtitle')}
           </motion.p>
 
           {/* Formulário */}
@@ -122,7 +121,7 @@ const CTA = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder={t("Seu nome")}
+                  placeholder={t("form.name")}
                   className="w-full px-6 py-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 transition-all duration-300"
                   required
                 />

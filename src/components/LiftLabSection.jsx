@@ -1,51 +1,59 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Award, Star, TrendingUp, Rocket, Users, Target } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  Award,
+  Star,
+  TrendingUp,
+  Rocket,
+  Users,
+  Target,
+  Link,
+} from "lucide-react";
 
 const LiftLabSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   const achievements = [
     {
       icon: Award,
-      title: 'Selecionados no Lift Lab',
-      description: 'Programa de aceleração de startups inovadoras',
-      color: 'from-neon-green to-neon-blue'
+      title: "Selecionados no Lift Lab",
+      description: "Programa de aceleração de startups inovadoras",
+      color: "from-neon-green to-neon-blue",
     },
     {
       icon: TrendingUp,
-      title: 'Crescimento Exponencial',
-      description: 'Mentoria e recursos para escalar o negócio',
-      color: 'from-neon-blue to-neon-cyan'
+      title: "Crescimento Exponencial",
+      description: "Mentoria e recursos para escalar o negócio",
+      color: "from-neon-blue to-neon-cyan",
     },
     {
       icon: Rocket,
-      title: 'Inovação Tecnológica',
-      description: 'Desenvolvimento de soluções blockchain avançadas',
-      color: 'from-neon-purple to-neon-pink'
-    }
+      title: "Inovação Tecnológica",
+      description: "Desenvolvimento de soluções blockchain avançadas",
+      color: "from-neon-purple to-neon-pink",
+    },
   ];
 
   const benefits = [
     {
       icon: Users,
-      title: 'Mentoria Especializada',
-      description: 'Acompanhamento de especialistas em blockchain e fintech'
+      title: "Mentoria Especializada",
+      description: "Acompanhamento de especialistas em blockchain e fintech",
     },
     {
       icon: Target,
-      title: 'Networking Premium',
-      description: 'Conexões com investidores e parceiros estratégicos'
+      title: "Networking Premium",
+      description: "Conexões com investidores e parceiros estratégicos",
     },
     {
       icon: Star,
-      title: 'Validação de Mercado',
-      description: 'Teste e validação com usuários reais'
-    }
+      title: "Validação de Mercado",
+      description: "Teste e validação com usuários reais",
+    },
   ];
 
   return (
@@ -63,16 +71,17 @@ const LiftLabSection = () => {
             <Award className="w-6 h-6 text-neon-green" />
             <span className="text-neon-green font-semibold">Lift Lab</span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">Selecionados no</span>
             <br />
             <span className="neon-text text-shadow">Lift Lab</span>
           </h2>
-          
+
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            O Consórcio 4.0 foi selecionado para participar do programa de aceleração do Lift Lab, 
-            reconhecendo nossa inovação em tecnologia blockchain para consórcios.
+            O Consórcio 4.0 foi selecionado para participar do programa de
+            aceleração do Lift Lab, reconhecendo nossa inovação em tecnologia
+            blockchain para consórcios.
           </p>
         </motion.div>
 
@@ -89,7 +98,7 @@ const LiftLabSection = () => {
                 src="https://s3.multdesk.com.br/public/lift.png"
                 alt="Lift Lab - Programa de Aceleração"
                 className="max-w-full h-auto rounded-lg shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-3xl"
-                style={{ maxHeight: '500px', minHeight: '400px' }}
+                style={{ maxHeight: "500px", minHeight: "400px" }}
               />
               {/* Efeito de brilho ao hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neon-blue/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
@@ -113,14 +122,16 @@ const LiftLabSection = () => {
               className="group"
             >
               <div className="glass-card neon-border p-8 h-full hover:neon-glow transition-all duration-500 group-hover:scale-105 text-center">
-                <div className={`w-20 h-20 bg-gradient-to-br ${achievement.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-500`}>
+                <div
+                  className={`w-20 h-20 bg-gradient-to-br ${achievement.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-500`}
+                >
                   <achievement.icon className="w-10 h-10 text-white" />
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:neon-text transition-all duration-300">
                   {achievement.title}
                 </h3>
-                
+
                 <p className="text-gray-300 leading-relaxed">
                   {achievement.description}
                 </p>
@@ -139,7 +150,7 @@ const LiftLabSection = () => {
           <h3 className="text-3xl font-bold text-white text-center mb-12">
             O que o Lift Lab nos oferece
           </h3>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
               <motion.div
@@ -152,7 +163,7 @@ const LiftLabSection = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-neon-green to-neon-blue rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
                   <benefit.icon className="w-6 h-6 text-white" />
                 </div>
-                
+
                 <div>
                   <h4 className="text-xl font-semibold text-white mb-2">
                     {benefit.title}
@@ -178,10 +189,14 @@ const LiftLabSection = () => {
               🚀 Junte-se à Revolução
             </h3>
             <p className="text-gray-300 mb-6">
-              Como parte do programa Lift Lab, estamos acelerando o desenvolvimento de soluções 
-              inovadoras que transformarão o futuro dos consórcios.
+              Como parte do programa Lift Lab, estamos acelerando o
+              desenvolvimento de soluções inovadoras que transformarão o futuro
+              dos consórcios.
             </p>
             <motion.button
+              onClick={() =>
+                window.open("https://www.liftlab.com.br/", "_blank")
+              }
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-neon-green to-neon-blue text-white font-semibold rounded-xl neon-glow hover:shadow-2xl transition-all duration-300"
@@ -209,4 +224,4 @@ const LiftLabSection = () => {
   );
 };
 
-export default LiftLabSection; 
+export default LiftLabSection;

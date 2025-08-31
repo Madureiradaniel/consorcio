@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -11,29 +10,30 @@ const Benefits = () => {
     threshold: 0.1
   });
 
-  const benefits = [
-    {
-      icon: Shield,
-      title: t('benefits.items.0.title'),
-      description: t('benefits.items.0.description'),
-      color: 'from-neon-blue to-neon-cyan',
-      features: ['Smart Contracts', 'Criptografia Avançada', 'Auditoria Contínua']
-    },
-    {
-      icon: Eye,
-      title: t('benefits.items.1.title'),
-      description: t('benefits.items.1.description'),
-      color: 'from-neon-purple to-neon-pink',
-      features: ['Transparência Total', 'Rastreabilidade', 'Relatórios em Tempo Real']
-    },
-    {
-      icon: TrendingDown,
-      title: t('benefits.items.2.title'),
-      description: t('benefits.items.2.description'),
-      color: 'from-neon-green to-neon-blue',
-      features: ['Sem Intermediários', 'Taxas Reduzidas', 'Eficiência Operacional']
-    }
-  ];
+ const benefits = [
+  {
+    icon: Shield,
+    title: t('benefits.items.0.title'),
+    description: t('benefits.items.0.description'),
+    color: 'from-neon-blue to-neon-cyan',
+    features: t('benefits.items.0.features', { returnObjects: true })
+  },
+  {
+    icon: Eye,
+    title: t('benefits.items.1.title'),
+    description: t('benefits.items.1.description'),
+    color: 'from-neon-purple to-neon-pink',
+    features: t('benefits.items.1.features', { returnObjects: true })
+  },
+  {
+    icon: TrendingDown,
+    title: t('benefits.items.2.title'),
+    description: t('benefits.items.2.description'),
+    color: 'from-neon-green to-neon-blue',
+    features: t('benefits.items.2.features', { returnObjects: true })
+  }
+];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -138,10 +138,10 @@ const Benefits = () => {
           className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-8"
         >
           {[
-            { number: '99.9%', label: 'Uptime' },
-            { number: '<100ms', label: 'Latência' },
-            { number: '256-bit', label: 'Criptografia' },
-            { number: '24/7', label: 'Suporte' }
+            { number: '99.9%', label: t('benefits.labels.0') },
+            { number: '<100ms', label: t('benefits.labels.1') },
+            { number: '256-bit', label: t('benefits.labels.2') },
+            { number: '24/7', label: t('benefits.labels.3') },
           ].map((stat, index) => (
             <motion.div
               key={index}
