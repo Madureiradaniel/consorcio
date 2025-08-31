@@ -115,7 +115,7 @@ const Hero = () => {
         >
           <Sparkles className="w-4 h-4 text-neon-blue" />
           <span className="text-sm font-medium text-white">
-            {t('hero.badge', '🚀 Tecnologia Blockchain')}
+            {t('hero.badge')}
           </span>
         </motion.div>
 
@@ -177,9 +177,9 @@ const Hero = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           {[
-            { number: '100%', label: 'Seguro' },
-            { number: '24/7', label: 'Disponível' },
-            { number: '0%', label: 'Intermediários' }
+            { number: t('hero.statics.0.number'), label: t('hero.statics.0.label') },
+            { number: t('hero.statics.1.number'), label: t('hero.statics.1.label') },
+            { number: t('hero.statics.2.number'), label: t('hero.statics.2.label') },
           ].map((stat, index) => (
             <motion.div
               key={index}

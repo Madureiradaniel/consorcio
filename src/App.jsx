@@ -11,6 +11,7 @@ import CTA from './components/CTA';
 import Footer from './components/Footer';
 import FloatingParticles from './components/FloatingParticles';
 import LiftLabPopup from './components/LiftLabPopup';
+import ConsorcioDashboard from './components/ConsorcioDashboard';
 
 function App() {
   const { t } = useTranslation();
@@ -69,6 +70,7 @@ function App() {
           <Benefits />
           <Technology />
           <LiftLabSection />
+          <ConsorcioDashboard/>
           <CTA />
         </main>
         <Footer />

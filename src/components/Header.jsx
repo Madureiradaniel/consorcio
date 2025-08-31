@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe } from "lucide-react";
 
 const Header = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -55,26 +55,26 @@ const Header = () => {
             <a
               href="#how-it-works"
               className="text-gray-300 hover:text-neon-blue transition-colors duration-300"
-            >
-              Como Funciona
+              >
+              {t('header.items.0.title')}
             </a>
             <a
               href="#benefits"
               className="text-gray-300 hover:text-neon-blue transition-colors duration-300"
             >
-              Benefícios
+              {t('header.items.1.title')}
             </a>
             <a
               href="#technology"
               className="text-gray-300 hover:text-neon-blue transition-colors duration-300"
             >
-              Tecnologia
+              {t('header.items.2.title')}
             </a>
             <a
               href="#contact"
               className="text-gray-300 hover:text-neon-blue transition-colors duration-300"
             >
-              Contato
+              {t('header.items.3.title')}
             </a>
           </nav>
 

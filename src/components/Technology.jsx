@@ -1,40 +1,48 @@
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Server, Shield, Zap, Eye, Database, Lock, Cpu, Network } from 'lucide-react';
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  Server,
+  Shield,
+  Eye,
+  Database,
+  Lock,
+  Cpu,
+  Network,
+} from "lucide-react";
 
 const Technology = () => {
   const { t } = useTranslation();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1
+    threshold: 0.1,
   });
 
   const techFeatures = [
     {
       icon: Server,
-      title: 'Smart Contracts',
-      description: 'Execução automática e confiável de todas as regras do consórcio',
-      color: 'from-neon-blue to-neon-cyan'
+      title: t("technology.features.0"),
+      description: t("technology.description.0"),
+      color: "from-neon-blue to-neon-cyan",
     },
     {
       icon: Database,
-      title: 'Blockchain Pública',
-      description: 'Transparência total com dados imutáveis e verificáveis',
-      color: 'from-neon-purple to-neon-pink'
+      title: t("technology.features.1"),
+      description: t("technology.description.1"),
+      color: "from-neon-purple to-neon-pink",
     },
     {
       icon: Eye,
-      title: 'Auditoria em Tempo Real',
-      description: 'Monitoramento contínuo de todas as transações',
-      color: 'from-neon-green to-neon-blue'
+      title: t("technology.features.2"),
+      description: t("technology.description.2"),
+      color: "from-neon-green to-neon-blue",
     },
     {
       icon: Lock,
-      title: 'Criptografia Avançada',
-      description: 'Segurança de nível bancário para seus dados',
-      color: 'from-neon-pink to-neon-purple'
-    }
+      title: t("technology.features.3"),
+      description: t("technology.description.3"),
+      color: "from-neon-pink to-neon-purple",
+    },
   ];
 
   const containerVariants = {
@@ -42,9 +50,9 @@ const Technology = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15
-      }
-    }
+        staggerChildren: 0.15,
+      },
+    },
   };
 
   const itemVariants = {
@@ -55,10 +63,16 @@ const Technology = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
+  const handleSubmit = () => {
+const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({behavior: 'smooth'})
+    }
+  }
 
   return (
     <section id="technology" className="section-padding relative">
@@ -72,10 +86,10 @@ const Technology = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-white">{t('technology.title')}</span>
+            <span className="text-white">{t("technology.title")}</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            {t('technology.subtitle')}
+            {t("technology.subtitle")}
           </p>
         </motion.div>
 
@@ -90,34 +104,41 @@ const Technology = () => {
           >
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                {t('technology.text')}
+                {t("technology.text")}
               </p>
-              
+
               {/* Destaques */}
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-neon-blue rounded-full"></div>
-                  <span className="text-white font-medium">Execução automática via smart contracts</span>
+                  <span className="text-white font-medium">
+                    {t("technology.comments.0")}
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-neon-purple rounded-full"></div>
-                  <span className="text-white font-medium">Transparência total em tempo real</span>
+                  <span className="text-white font-medium">
+                    {t("technology.comments.1")}
+                  </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-neon-cyan rounded-full"></div>
-                  <span className="text-white font-medium">Segurança criptográfica avançada</span>
+                  <span className="text-white font-medium">
+                    {t("technology.comments.2")}
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Botão CTA */}
-            {/* <motion.button
+            <motion.button
+              onClick={handleSubmit}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-cyan text-white font-semibold rounded-xl neon-glow hover:shadow-2xl transition-all duration-300"
             >
-              Explorar Tecnologia
-            </motion.button> */}
+              {t("technology.button")}
+            </motion.button>
           </motion.div>
 
           {/* Coluna direita - Features */}
@@ -128,15 +149,13 @@ const Technology = () => {
             className="space-y-6"
           >
             {techFeatures.map((feature, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="group"
-              >
+              <motion.div key={index} variants={itemVariants} className="group">
                 <div className="glass-card neon-border p-6 hover:neon-glow transition-all duration-500 group-hover:scale-105">
                   <div className="flex items-start space-x-4">
                     {/* Ícone */}
-                    <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 flex-shrink-0`}>
+                    <div
+                      className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-500 flex-shrink-0`}
+                    >
                       <feature.icon className="w-8 h-8 text-white" />
                     </div>
 
@@ -166,36 +185,46 @@ const Technology = () => {
           <div className="glass-card neon-border p-8 relative overflow-hidden">
             {/* Background com gradiente */}
             <div className="absolute inset-0 bg-gradient-to-br from-neon-blue/5 to-neon-purple/5"></div>
-            
+
             <div className="relative z-10">
               <h3 className="text-2xl font-bold text-white mb-8 text-center">
-                Arquitetura do Sistema
+                {t("technology.highlights.title")}
               </h3>
-              
+
               {/* Diagrama simplificado */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-gradient-to-br from-neon-blue to-neon-cyan rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Cpu className="w-10 h-10 text-white" />
                   </div>
-                  <h4 className="text-white font-semibold mb-2">Frontend</h4>
-                  <p className="text-gray-400 text-sm">Interface moderna e responsiva</p>
+                  <h4 className="text-white font-semibold mb-2">
+                    {t("technology.highlights.items.0.stack")}
+                  </h4>
+                  <p className="text-gray-400 text-sm">
+                    {t("technology.highlights.items.0.description")}
+                  </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-20 h-20 bg-gradient-to-br from-neon-purple to-neon-pink rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Network className="w-10 h-10 text-white" />
                   </div>
                   <h4 className="text-white font-semibold mb-2">Blockchain</h4>
-                  <p className="text-gray-400 text-sm">Rede descentralizada e segura</p>
+                  <p className="text-gray-400 text-sm">
+                    Rede descentralizada e segura
+                  </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-20 h-20 bg-gradient-to-br from-neon-green to-neon-blue rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <Shield className="w-10 h-10 text-white" />
                   </div>
-                  <h4 className="text-white font-semibold mb-2">Smart Contracts</h4>
-                  <p className="text-gray-400 text-sm">Lógica de negócio automatizada</p>
+                  <h4 className="text-white font-semibold mb-2">
+                    Smart Contracts
+                  </h4>
+                  <p className="text-gray-400 text-sm">
+                    Lógica de negócio automatizada
+                  </p>
                 </div>
               </div>
             </div>
@@ -225,4 +254,4 @@ const Technology = () => {
   );
 };
 
-export default Technology; 
+export default Technology;

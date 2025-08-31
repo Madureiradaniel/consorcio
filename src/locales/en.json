@@ -1,11 +1,42 @@
 {
+  "header": {
+    "items": [
+      {
+        "title": "How It Works"
+      },
+      {
+        "title": "Benefits"
+      },
+      {
+        "title": "Technology"
+      },
+      {
+        "title": "Contact"
+      }
+    ]
+  },
   "hero": {
+    "badge": "🚀 Blockchain Technology",
     "title": "The Future of Consortia is Now",
     "subtitle": "Transparency, automation, and total security powered by blockchain technology.",
     "buttons": {
       "primary": "Discover the Project",
       "secondary": "Join the Waitlist"
-    }
+    },
+    "statics": [
+      {
+        "number": "100%",
+        "label": "Secure"
+      },
+      {
+        "number": "24/7",
+        "label": "Avaliable"
+      },
+      {
+        "number": "0%",
+        "label": "Intermediaries"
+      }
+    ]
   },
   "howItWorks": {
     "title": "How It Works",
@@ -31,32 +62,74 @@
     "items": [
       {
         "title": "Absolute Security",
-        "description": "Smart contracts ensure all rules are automatically enforced."
+        "description": "Smart contracts ensure all rules are automatically enforced.",
+        "features": [
+          "Smart Contracts",
+          "Advanced Cryptography",
+          "Continuous Auditing"
+        ]
       },
       {
         "title": "Full Transparency",
-        "description": "All transactions are visible and auditable in real time."
+        "description": "All transactions are visible and auditable in real time.",
+        "features": ["Immutable Data", "Public Access", "Instant Auditing"]
       },
       {
         "title": "Reduced Costs",
-        "description": "Eliminate intermediaries and significantly reduce operational costs."
+        "description": "Eliminate intermediaries and significantly reduce operational costs.",
+        "features": [
+          "Fewer Middlemen",
+          "Fast Execution",
+          "Financial Efficiency"
+        ]
       }
-    ]
+    ],
+    "labels": ["Uptime", "Latency", "Encryption", "Support"]
   },
   "technology": {
     "title": "The Infrastructure Behind the Innovation",
     "subtitle": "Cutting-edge technology for exceptional results",
     "text": "Our system uses smart contracts and public blockchain to ensure all consortium rules are enforced without human intervention. Every share, draw, and payment is traceable and auditable in real time.",
+    "button": "Explore Technology",
     "features": [
       "Smart Contracts",
       "Public Blockchain",
       "Real-time Auditing",
       "Advanced Cryptography"
-    ]
+    ],
+    "description": [
+      "Automatic and reliable execution of all consortium rules",
+      "Full transparency with immutable and verifiable data",
+      "Continuous monitoring of all transactions",
+      "Bank-grade security for your data"
+    ],
+    "comments": [
+      "Automatic execution via smart contracts",
+      "Full transparency in real time",
+      "Advanced cryptographic security"
+    ],
+    "highlights": {
+      "title": "System Architecture",
+      "items": [
+        {
+          "stack": "Frontend",
+          "description": "Modern and responsive interface"
+        },
+        {
+          "stack": "Blockchain",
+          "description": "Decentralized and secure network"
+        },
+        {
+          "stack": "Smart Contracts",
+          "description": "Automated business logic"
+        }
+      ]
+    }
   },
   "cta": {
     "text": "Join the consortium revolution. Be part of the future.",
-    "button": "Request a Demo"
+    "button": "Request a Demo",
+    "subtitle": "Join thousands of people who are already revolutionizing their consortia with our blockchain technology."
   },
   "footer": {
     "description": "Transforming the future of consortia with blockchain technology",
@@ -72,10 +145,58 @@
     "en": "EN"
   },
   "form": {
+    "name": "Your Name",
     "email": "Your email",
     "submit": "Send",
     "placeholder": "Enter your email to receive updates",
     "success": "Email registered successfully!",
     "error": "Error registering email. Please try again."
+  },
+  "consorcioData": {
+    "title": "Consortium Sector Performance in 2024",
+    "subtitle": "Distribution by Category",
+    "highlights": [
+      {
+        "title": "Quotas Sold",
+        "value": "4.18 million",
+        "description": "6.4% growth compared to 2023"
+      },
+      {
+        "title": "Business Closed",
+        "value": "R$316.7 billion",
+        "description": "New all-time high"
+      },
+      {
+        "title": "Active Participants",
+        "value": "10.29 million",
+        "description": "Continuous growth in membership"
+      }
+    ],
+    "distribution": [
+      {
+        "category": "Light Vehicles",
+        "value": "1.70 million memberships"
+      },
+      {
+        "category": "Motorcycles",
+        "value": "1.27 million subscriptions"
+      },
+      {
+        "category": "Real Estate",
+        "value": "779,350 subscriptions"
+      },
+      {
+        "category": "Heavy Vehicles",
+        "value": "310,370 subscriptions"
+      },
+      {
+        "category": "Electronics",
+        "value": "79,290 subscriptions"
+      },
+      {
+        "category": "Services",
+        "value": "47,060 subscriptions"
+      }
+    ]
   }
-} 
+}

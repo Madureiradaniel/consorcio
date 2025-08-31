@@ -1,11 +1,42 @@
 {
+  "header": {
+    "items": [
+      {
+        "title": "Como Funciona"
+      },
+      {
+        "title": "Benefícios"
+      },
+      {
+        "title": "Tecnologia"
+      },
+      {
+        "title": "Contato"
+      }
+    ]
+  },
   "hero": {
+    "badge": "🚀 Tecnologia Blockchain",
     "title": "O Futuro dos Consórcios é Agora",
     "subtitle": "Transparência, automação e segurança total com a tecnologia blockchain.",
     "buttons": {
       "primary": "Conheça o Projeto",
       "secondary": "Entre na Lista de Espera"
-    }
+    },
+    "statics": [
+      {
+        "number": "100%",
+        "label": "Seguro"
+      },
+      {
+        "number": "24/7",
+        "label": "Disponível"
+      },
+      {
+        "number": "0%",
+        "label": "Intermediários"
+      }
+    ]
   },
   "howItWorks": {
     "title": "Como Funciona",
@@ -31,32 +62,74 @@
     "items": [
       {
         "title": "Segurança Absoluta",
-        "description": "Smart contracts garantem que todas as regras sejam cumpridas automaticamente."
+        "description": "Smart contracts garantem que todas as regras sejam cumpridas automaticamente.",
+        "features": [
+          "Smart Contracts",
+          "Criptografia Avançada",
+          "Auditoria Contínua"
+        ]
       },
       {
         "title": "Transparência Total",
-        "description": "Todas as transações são visíveis e auditáveis em tempo real."
+        "description": "Todas as transações são visíveis e auditáveis em tempo real.",
+        "features": ["Dados Imutáveis", "Acesso Público", "Auditoria Contínua"]
       },
       {
         "title": "Custos Reduzidos",
-        "description": "Elimine intermediários e reduza custos operacionais significativamente."
+        "description": "Elimine intermediários e reduza custos operacionais significativamente.",
+        "features": [
+          "Menos Intermediários",
+          "Execução Rápida",
+          "Eficiência Financeira"
+        ]
       }
-    ]
+    ],
+    "labels": ["Uptime", "Latência", "Criptografia", "Suporte"]
   },
   "technology": {
     "title": "A Infraestrutura por Trás da Inovação",
     "subtitle": "Tecnologia de ponta para resultados excepcionais",
     "text": "Nosso sistema utiliza smart contracts e blockchain pública para garantir que todas as regras do consórcio sejam cumpridas sem intervenção humana. Cada cota, sorteio e pagamento é rastreável e auditável em tempo real.",
+    "button": "Explorar Tecnologia",
     "features": [
       "Smart Contracts",
       "Blockchain Pública",
       "Auditoria em Tempo Real",
       "Criptografia Avançada"
-    ]
+    ],
+    "description": [
+      "Execução automática e confiável de todas as regras do consórcio",
+      "Transparência total com dados imutáveis ​​e verificáveis",
+      "Monitoramento contínuo de todas as transações",
+      "Segurança de nível bancário para seus dados"
+    ],
+    "comments": [
+      "Execução automática por meio de contratos inteligentes",
+      "Transparência total em tempo real",
+      "Segurança criptográfica avançada"
+    ],
+    "highlights": {
+      "title": "Arquitetura do Sistema",
+      "items": [
+        {
+          "stack": "Frontend",
+          "description": "Interface moderna e responsiva"
+        },
+        {
+          "stack": "Blockchain",
+          "description": "Rede descentralizada e segura"
+        },
+        {
+          "stack": "Smart Contracts",
+          "description": "Lógica de negócio automatizada"
+        }
+      ]
+    }
   },
   "cta": {
     "text": "Junte-se à revolução dos consórcios. Faça parte do futuro.",
-    "button": "Solicitar Demonstração"
+    "button": "Solicitar Demonstração",
+    "subtitle": "Junte-se a milhares de pessoas que já estão revolucionando seus consórcios com nossa tecnologia blockchain."
   },
   "footer": {
     "description": "Transformando o futuro dos consórcios com tecnologia blockchain",
@@ -72,10 +145,58 @@
     "en": "EN"
   },
   "form": {
+    "name": "Seu Nome",
     "email": "Seu e-mail",
     "submit": "Enviar",
     "placeholder": "Digite seu e-mail para receber novidades",
     "success": "E-mail cadastrado com sucesso!",
     "error": "Erro ao cadastrar e-mail. Tente novamente."
+  },
+  "consorcioData": {
+    "title": "Desempenho do Setor de Consórcios em 2024",
+    "subtitle": "Distribuição por Categoria",
+    "highlights": [
+      {
+        "title": "Cotas Vendidas",
+        "value": "4,18 milhões",
+        "description": "Crescimento de 6,4% em relação a 2023"
+      },
+      {
+        "title": "Negócios Realizados",
+        "value": "R$ 316,7 bilhões",
+        "description": "Novo recorde histórico"
+      },
+      {
+        "title": "Participantes Ativos",
+        "value": "10,29 milhões",
+        "description": "Aumento contínuo da adesão"
+      }
+    ],
+    "distribution": [
+      {
+        "category": "Veículos Leves",
+        "value": "1,70 milhão de adesões"
+      },
+      {
+        "category": "Motocicletas",
+        "value": "1,27 milhão de adesões"
+      },
+      {
+        "category": "Imóveis",
+        "value": "779,35 mil adesões"
+      },
+      {
+        "category": "Veículos Pesados",
+        "value": "310,37 mil adesões"
+      },
+      {
+        "category": "Eletroeletrônicos",
+        "value": "79,29 mil adesões"
+      },
+      {
+        "category": "Serviços",
+        "value": "47,06 mil adesões"
+      }
+    ]
   }
-} 
+}
